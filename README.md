@@ -1,71 +1,97 @@
-Learning-Multi-grained-Aspect-Target-Sequence-for-Chinese-Sentiment-Analysis
+# Learning-Multi-grained-Aspect-Target-Sequence-for-Chinese-Sentiment-Analysis
 
-Requirements:
+## Requirements:
 
 1. Python 2.7.12
 2. Numpy 1.12.0
 3. Tensorflow 0.12.1
 4. Keras 1.2.1
 
-There are three sets of experiments in this catalogue: 1) Chinese word level experiments; 2) English experiments; and 3) Fusion experiments. 
+### There are three sets of experiments in this catalogue: 1) Chinese word level experiments; 2) English experiments; and 3) Fusion experiments. 
 Detailed instructions of how to run the codes are listed below.
 
 
-Chinese word level experiments:
+## Chinese word level experiments:
 
 
 1. For files of 'ATSM-S-word_4chn.py', 'v1.py', 'v2.py', 'v3.py', 'v4.py' and 'v5.py':
-	  Need to change the three dataset input files for each dataset. The three files are: dataset embeddings, dataset labels and dataset    aspect information.
+
+	  Need to change the three dataset input files for each dataset. The three files are: dataset embeddings, dataset labels and dataset aspect information.
 	  Specifically, they are:
 
 	  Notebook: 623embedding.py, 623label.txt, 623id.py
+	  
 	  Car: 1172embedding.py, 1172label.txt, 1172id.py
+	  
 	  Camera: 2231embedding.py, 2231label.txt, 2231id.py
+	  
 	  Phone: 2556embedding.py, 2556label.txt, 2556id.py
+	  
 	  All:  allembedding.py, alllabel.txt, allid.py
+	  
 
 2. For 'bilstm\lstm_4chn.py':
+
 	Only need to change two dataset input files for each dataset, namely dataset embeddings and dataset labels.
 
 	  Notebook: 623embedding.py, 623label.txt
+	  
 	  Car: 1172embedding.py, 1172label.txt
+	  
 	  Camera: 2231embedding.py, 2231label.txt
+	  
 	  Phone: 2556embedding.py, 2556label.txt
+	  
 	  All:  allembedding.py, alllabel.txt	
 
 3. For 'memnet_4chn.py':
+
 	  Need to change four dataset input files for each dataset, as below:
 
 	  Notebook: 623embedding.py, 623label.txt, cont623embedding.py,623aspectid.py
+	  
 	  Car: 1172embedding.py, 1172label.txt, cont1172embedding.py, 1172aspectid.py
+	  
 	  Camera: 2231embedding.py, 2231label.txt, cont2231embedding.py, 2231aspectid.py
+	  
 	  Phone: 2556embedding.py, 2556label.txt, cont2556embedding.py, 2556aspectid.py
+	  
 	  All:  allembedding.py, alllabel.txt, contallembedding.py, allaspectid.py
 
 
 4. For 'tdlstm_4chn.py':
+
 	  Need to update four dataset input files for each dataset, as below:
 
 	  Notebook: 623embedding.py, 623label.txt, 623ind_forward.py, 623ind_backward.py
+	  
 	  Car: 1172embedding.py, 1172label.txt, 1172ind_forward.py, 1172ind_backward.py
+	  
 	  Camera: 2231embedding.py, 2231label.txt, 2231ind_forward.py, 2231ind_backward.py
+	  
 	  Phone: 2556embedding.py, 2556label.txt, 2556ind_forward.py, 2556ind_backward.py
+	  
   	All:  allembedding.py, alllabel.txt, allind_forward.py, allind_backward.py
 
 
 5. For 'tclstm_4chn.py':
+
 	  Need to update five dataset input files for each dataset, as below:
 
 	  Notebook: 623embedding.py, 623label.txt,623aspectid.py, 623ind_forward.py, 623ind_backward.py
+	  
 	  Car: 1172embedding.py, 1172label.txt, 1172aspectid.py, 1172ind_forward.py, 1172ind_backward.py
+	  
 	  Camera: 2231embedding.py, 2231label.txt, 2231aspectid.py, 2231ind_forward.py, 2231ind_backward.py
+	  
 	  Phone: 2556embedding.py, 2556label.txt, 2556aspectid.py, 2556ind_forward.py, 2556ind_backward.py
+	  
 	  All:  allembedding.py, alllabel.txt, allaspectid.py, allind_forward.py, allind_backward.py
 
 
 
 
-English experiments:
+## English experiments:
 
 
 1. ATSM-S-eng.py: 
@@ -181,7 +207,7 @@ English experiments:
 
 
 
-Fusion experiments:
+## Fusion experiments:
 
 
 For every of the five datasets, update three dataset input files for each required granularities, based on combinations. For example:
