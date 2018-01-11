@@ -215,33 +215,33 @@ For every of the five datasets, update three dataset input files for each requir
 
 	Notebook:
 
-		Word: ../word/623embedding.py, ../word/623label.txt, ../word/623id.py
+		Word: 	   ../word/623embedding.py,      ../word/623label.txt,      ../word/623id.py
 		Character: ../character/623embedding.py, ../character/623label.txt, ../character/623id.py
-		Radical: ../radical/623embedding.py, ../radical/623label.txt, ../radical/623id.py
+		Radical:   ../radical/623embedding.py,   ../radical/623label.txt,   ../radical/623id.py
 
 
 	Car:
 
-		Word: ../word/1172embedding.py, ../word/1172label.txt, ../word/1172id.py
+		Word:      ../word/1172embedding.py,      ../word/1172label.txt,      ../word/1172id.py
 		Character: ../character/1172embedding.py, ../character/1172label.txt, ../character/1172id.py
-		Radical: ../radical/1172embedding.py, ../radical/1172label.txt, ../radical/1172id.py
+		Radical:   ../radical/1172embedding.py,   ../radical/1172label.txt,   ../radical/1172id.py
 
 	Camera:
 
-		Word: ../word/2231embedding.py, ../word/2231label.txt, ../word/2231id.py
+		Word:      ../word/2231embedding.py,      ../word/2231label.txt,      ../word/2231id.py
 		Character: ../character/2231embedding.py, ../character/2231label.txt, ../character/2231id.py
-		Radical: ../radical/2231embedding.py, ../radical/2231label.txt, ../radical/2231id.py
+		Radical:   ../radical/2231embedding.py,   ../radical/2231label.txt,   ../radical/2231id.py
 
 	Phone:
 
-		Word: ../word/2556embedding.py, ../word/2556label.txt, ../word/2556id.py
+		Word:      ../word/2556embedding.py,      ../word/2556label.txt,      ../word/2556id.py
 		Character: ../character/2556embedding.py, ../character/2556label.txt, ../character/2556id.py
-		Radical: ../radical/2556embedding.py, ../radical/2556label.txt, ../radical/2556id.py
+		Radical:   ../radical/2556embedding.py,   ../radical/2556label.txt,   ../radical/2556id.py
 
 	All:
 
-		Word: ../word/allembedding.py, ../word/alllabel.txt, ../word/allid.py
+		Word:      ../word/allembedding.py,      ../word/alllabel.txt,      ../word/allid.py
 		Character: ../character/allembedding.py, ../character/alllabel.txt, ../character/allid.py
-		Radical: ../radical/allembedding.py, ../radical/alllabel.txt, ../radical/allid.py
+		Radical:   ../radical/allembedding.py,   ../radical/alllabel.txt,   ../radical/allid.py
 
 
