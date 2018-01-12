@@ -76,7 +76,7 @@ with tf.Session() as sess:
     
 
     # load dataset embeddings, change according to dataset
-    dataset=pickle.load(open('../data/Chinese/word/allembedding.py','r'))
+    dataset=pickle.load(open('../data/Chinese/word/allembedding.p','r'))
     dataset_size=dataset.shape[0]
     
 
@@ -86,8 +86,8 @@ with tf.Session() as sess:
     for e in label0:
         label.append(np.int(e.rstrip()))   
     # load aspect info
-    indexes_f=pickle.load(open('../data/Chinese/word/tc-td-lstm/allind_forward.py','r'))
-    indexes_b=pickle.load(open('../data/Chinese/word/tc-td-lstm/allind_backward.py','r'))
+    indexes_f=pickle.load(open('../data/Chinese/word/tc-td-lstm/allind_forward.p','r'))
+    indexes_b=pickle.load(open('../data/Chinese/word/tc-td-lstm/allind_backward.p','r'))
 
 
     fil_size=np.int32(dataset_size)
