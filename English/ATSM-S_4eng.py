@@ -103,23 +103,23 @@ with tf.Session() as sess:
 #Load data from laptop domain from SemEval 2014
 
     #single/multi training
-    seqtr=pickle.load(open('../data/English/single_multi_split_lst/ltrain_single_multi_lst.py','r'))
+    seqtr=pickle.load(open('../data/English/single_multi_split_lst/ltrain_single_multi_lst.p','r'))
     #single/multi training
     #[0] is single case
     #[1] is multi case
     multitr=seqtr[1]
 
     #single/multi testing
-    seqte=pickle.load(open('../data/English/single_multi_split_lst/ltest_single_multi_lst.py','r'))
+    seqte=pickle.load(open('../data/English/single_multi_split_lst/ltest_single_multi_lst.p','r'))
     #single/multi testing
     multite=seqte[1]
 
 
     # load dataset word embedding 
-    dataset_train=pickle.load(open('../data/English/dataset/ltrain_emb.py','r'))
+    dataset_train=pickle.load(open('../data/English/dataset/ltrain_emb.p','r'))
     dataset_train=dataset_train[multitr]
 
-    dataset_test=pickle.load(open('../data/English/dataset/ltest_emb.py','r'))
+    dataset_test=pickle.load(open('../data/English/dataset/ltest_emb.p','r'))
     dataset_test=dataset_test[multite]
 
 
@@ -140,11 +140,11 @@ with tf.Session() as sess:
        
        
     # load aspect info of the dataset
-    aspect_mat_train=pickle.load(open('../data/English/dataset/ltrain_aspectid.py','r'))
+    aspect_mat_train=pickle.load(open('../data/English/dataset/ltrain_aspectid.p','r'))
     aspect_mat_train=aspect_mat_train[multitr]
 
 
-    aspect_mat_test=pickle.load(open('../data/English/dataset/ltest_aspectid.py','r'))
+    aspect_mat_test=pickle.load(open('../data/English/dataset/ltest_aspectid.p','r'))
     aspect_mat_test=aspect_mat_test[multite]
 ######################################################################################################################################
 #######################################################################################################################################
@@ -152,7 +152,7 @@ with tf.Session() as sess:
 # #Load data from restaurant domain from SemEval 2014
 
 #     #single/multi training
-#     seqtr=pickle.load(open('../data/English/single_multi_split_lst/rtrain_single_multi_lst.py','r'))
+#     seqtr=pickle.load(open('../data/English/single_multi_split_lst/rtrain_single_multi_lst.p','r'))
 #     #single/multi training
 #     #[0] is single case
 #     #[1] is multi case
@@ -160,17 +160,17 @@ with tf.Session() as sess:
 #     multitr=seqtr[1]
     
 #     #single/multi testing
-#     seqte=pickle.load(open('../data/English/single_multi_split_lst/rtest_single_multi_lst.py','r'))
+#     seqte=pickle.load(open('../data/English/single_multi_split_lst/rtest_single_multi_lst.p','r'))
 #     #single/multi testing
 #     multite=seqte[1]
     
     
     
 #     # load dataset word embedding 
-#     dataset_train=pickle.load(open('../data/English/dataset/rtrain_emb.py','r'))
+#     dataset_train=pickle.load(open('../data/English/dataset/rtrain_emb.p','r'))
 #     dataset_train=dataset_train[multitr]
     
-#     dataset_test=pickle.load(open('../data/English/dataset/rtest_emb.py','r'))
+#     dataset_test=pickle.load(open('../data/English/dataset/rtest_emb.p','r'))
 #     dataset_test=dataset_test[multite]
 
 
@@ -193,11 +193,11 @@ with tf.Session() as sess:
         
         
 #     # load aspect info of the dataset
-#     aspect_mat_train=pickle.load(open('../data/English/dataset/rtrain_aspectid.py','r'))
+#     aspect_mat_train=pickle.load(open('../data/English/dataset/rtrain_aspectid.p','r'))
 #     aspect_mat_train=aspect_mat_train[multitr]
     
 
-#     aspect_mat_test=pickle.load(open('../data/English/dataset/rtest_aspectid.py','r'))
+#     aspect_mat_test=pickle.load(open('../data/English/dataset/rtest_aspectid.p','r'))
 #     aspect_mat_test=aspect_mat_test[multite]
 
 # ######################################################################################################################################
