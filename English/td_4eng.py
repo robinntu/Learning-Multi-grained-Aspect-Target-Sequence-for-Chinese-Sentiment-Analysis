@@ -75,7 +75,7 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     #load aspect mat info
-    aspect_mat=pickle.load(open('../data/English/tc_td/2951l_aspectid.py','r'))
+    aspect_mat=pickle.load(open('../data/English/tc_td/2951l_aspectid.p','r'))
 
     multi=[]
 ##########################################
@@ -111,7 +111,7 @@ with tf.Session() as sess:
     aspect_mat=aspect_mat[multi]
     
     #load embeddings
-    dataset=pickle.load(open('../data/English/tc_td/2951l_emb.py','r'))
+    dataset=pickle.load(open('../data/English/tc_td/2951l_emb.p','r'))
     dataset=dataset[multi]  
     
 
@@ -126,10 +126,10 @@ with tf.Session() as sess:
 
 
     #load forward and backward aspect info
-    indexes_f=pickle.load(open('../data/English/tc_td/lind_forward.py','r'))
+    indexes_f=pickle.load(open('../data/English/tc_td/lind_forward.p','r'))
     indexes_f=np.take(indexes_f, multi,axis=0)
 
-    indexes_b=pickle.load(open('../data/English/tc_td/lind_backward.py','r'))
+    indexes_b=pickle.load(open('../data/English/tc_td/lind_backward.p','r'))
     indexes_b=np.take(indexes_b, multi,axis=0)
 
 
