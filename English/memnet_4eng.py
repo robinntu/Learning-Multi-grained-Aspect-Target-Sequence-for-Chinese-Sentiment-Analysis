@@ -128,7 +128,7 @@ with tf.Session() as sess:
 
 
     #single/multi testing
-    seq=pickle.load(open('../data/English/memnet/all_single_multi_lst.py','r'))
+    seq=pickle.load(open('../data/English/memnet/all_single_multi_lst.p','r'))
 
 
 #loading and filtering dataset
@@ -163,7 +163,7 @@ with tf.Session() as sess:
 
 
 
-    dataset=pickle.load(open('../data/English/memnet/all_sent_emb.py','r'))
+    dataset=pickle.load(open('../data/English/memnet/all_sent_emb.p','r'))
     
     #single/multi testing
     dataset=dataset[multi]
@@ -171,7 +171,7 @@ with tf.Session() as sess:
     print dataset.shape
 
  
-    noasdt=pickle.load(open('../data/English/memnet/all_notar_sent_emb.py','r'))
+    noasdt=pickle.load(open('../data/English/memnet/all_notar_sent_emb.p','r'))
     #single/multi testing
     noasdt=noasdt[multi]
 
@@ -186,7 +186,7 @@ with tf.Session() as sess:
 
 
    
-    aspect_mat=pickle.load(open('../data/English/memnet/all_aspectid.py','r'))
+    aspect_mat=pickle.load(open('../data/English/memnet/all_aspectid.p','r'))
     #single/multi testing
     aspect_mat=aspect_mat[multi]
 
