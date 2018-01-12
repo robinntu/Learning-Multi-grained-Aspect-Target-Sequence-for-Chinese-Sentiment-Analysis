@@ -59,7 +59,7 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     # load dataset embeddings, change according to dataset
-    dataset=pickle.load(open('../data/Chinese/word/623embedding.py','r'))
+    dataset=pickle.load(open('../data/Chinese/word/623embedding.p','r'))
     dataset_size=dataset.shape[0]
  
 
