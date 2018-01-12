@@ -105,7 +105,7 @@ with tf.Session() as sess:
 
 
     # load dataset embeddings, change according to dataset
-    dataset=pickle.load(open('../data/Chinese/word/allembedding.py','r'))
+    dataset=pickle.load(open('../data/Chinese/word/allembedding.p','r'))
     dataset_size=dataset.shape[0]
 
 
@@ -117,8 +117,8 @@ with tf.Session() as sess:
 
 
      # load aspect meta-data, change according to dataset
-    noasdt=pickle.load(open('../data/Chinese/word/memnet/contallembedding.py','r'))
-    aspect_mat=pickle.load(open('../data/Chinese/word/allaspectid.py','r'))
+    noasdt=pickle.load(open('../data/Chinese/word/memnet/contallembedding.p','r'))
+    aspect_mat=pickle.load(open('../data/Chinese/word/allaspectid.p','r'))
 
    
    
