@@ -118,7 +118,7 @@ with tf.Session() as sess:
     
     
     # load dataset embedding
-    dataset=pickle.load(open('..data/Chinese/character/allembedding.py','r'))
+    dataset=pickle.load(open('..data/Chinese/character/allembedding.p','r'))
     dataset_size=dataset.shape[0]
 
  
@@ -134,7 +134,7 @@ with tf.Session() as sess:
 
 
     # load aspect info
-    aspect_mat=pickle.load(open('..data/Chinese/character/allid.py','r'))
+    aspect_mat=pickle.load(open('..data/Chinese/character/allid.p','r'))
 
 
 
