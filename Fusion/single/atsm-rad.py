@@ -148,7 +148,7 @@ with tf.Session() as sess:
     
     
     # load dataset embedding
-    dataset=pickle.load(open('..data/Chinese/radical/623embedding.py','r'))
+    dataset=pickle.load(open('..data/Chinese/radical/623embedding.p','r'))
     dataset_size=dataset.shape[0]
 
  
@@ -164,7 +164,7 @@ with tf.Session() as sess:
 
 
     # load aspect info
-    aspect_mat=pickle.load(open('..data/Chinese/radical/623id.py','r'))
+    aspect_mat=pickle.load(open('..data/Chinese/radical/623id.p','r'))
 
 
     fil_size=np.int32(dataset_size)
